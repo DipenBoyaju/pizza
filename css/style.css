@@ -1,0 +1,398 @@
+/* global style */
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+
+/* banner-section */
+.header {
+	position: fixed;
+	background-color: #1abb48;
+	width: 100%;
+	z-index: 5;
+	box-shadow: 4px 4px 5px 6px rgba(0,0,0,0.5);
+}
+.logo {
+	position: absolute;
+	z-index: 5;
+	float: left;
+	padding-top: 10px;
+}
+.logo a {
+	font-size: 26px;
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	text-shadow: -4px 10px 7px rgba(0,0,0,0.8);
+}
+.navbar,
+.navbar ul {
+	padding: 0;
+	float: right;
+	display: inline-block;
+}
+.navbar ul {
+	margin: 0;
+}
+.navbar ul li {
+	display: inline-block;
+	padding: 20px 30px;
+}
+.navbar ul a {
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li:hover {
+	background-color: #fff;
+	color: #1abb48;
+	transition: all 0.7s;
+}
+.log li:hover{
+	background-color: transparent !important;
+}
+.navbar .log a {
+	font-size: 16px;
+	padding: 8px 30px;
+	color: #fff;
+	background-color: #1b1b1b;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+.navbar .log a:hover{
+	background-color: #fff;
+	color: #000;
+	transition: all 0.7s ease;
+}
+.banner{
+	background-color: #1b1b1b;
+    background-image: url(../images/chef-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; 
+    height: 600px;
+}
+/* welcome-section */
+.welcome {
+	padding: 60px 0;
+}
+.welcome-text h1 {
+	font-size: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.welcome-text h5,
+.special .fresh,
+.order-section p {
+	font-family: 'Pacifico', cursive;
+	color: #1abb48;
+	font-size: 28px;
+}
+.welcome-text button {
+	border: 2px solid #1abb48;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 30px;
+	background-color: transparent;
+	color: #1abb48;
+}
+.welcome-text button:hover{
+	background-color: #1abb48;
+	transition: all 0.8s ease;
+	color: #fff;
+}
+.welcome .welcome-img img {
+	float: right;
+	height: 620px;
+	margin-top: -140px;
+}
+.welcome-text p {
+	margin-top: 30px;
+}
+
+/* special section */
+.special {
+	padding: 60px 0;
+	text-align: center;
+	background-color: #1b1b1b;
+	color: #fff;
+}
+.special h1 {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.special h3 {
+	padding: 20px 0;
+}
+.special .special-price {
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	color: red;
+	line-height: 60px;
+}
+.special img {
+	width: 80%;
+}
+.special img:hover {
+	width: 90%;
+	transition: all 0.8s ease;
+	cursor: pointer;
+}
+.special button {
+	border: 2px solid #fff;
+	padding: 10px 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.special button:hover{
+	background-color: red;
+	transition: all 0.8s ease;
+	color: #fff;
+	border-color: #1abb48;
+	background-color: #1abb48;
+}
+.special .dd{
+	position: relative;
+    top: -80px;
+    left: 0;
+    width: 100%;
+}    
+.special .dds{
+	position: relative;
+    bottom: -120px;
+    left: 0;
+    width: 100%;
+    transform: rotate(360deg);
+}  
+.special .dd img,
+.special .dds img{
+	width: 100%;
+}
+.special .special-ht {
+	height: 400px;
+}
+/* order-section */
+.order-section {
+	background-image: url(../images/orders.jpg);
+	height: 500px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0;
+}
+.order-section p{
+	color: #1abb48;
+	margin-top: 30px;
+} 
+.order-section h1 {
+	font-size: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 30px 0 60px 0;
+}
+.order-section button{
+	padding: 10px 40px;
+	border: 2px solid #1abb48;
+	background-color: rgba(137,86,73,0.7);
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+.order-section button:hover{
+	background-color: #1abb48;
+	transition: all 0.8s ease;
+}
+
+
+.video {
+	background-image: url(../images/order-pizza.jpg);
+	height: 500px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video img {
+	text-align: center center;
+}
+/* Info List */
+.info-list {
+	background-image: url(../images/back_2.png);
+	text-align: center;
+	padding: 60px 0;
+}
+.info-list h4 {
+	padding: 30px 0;
+}
+.info-list .order-img {
+    max-width: 90px;
+    transition: all 400ms ease;
+}
+/* Footer-style */
+.footer{
+	background-color: #1b1b1b;
+    background-image: url(../images/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; 
+}
+.footer .tp-footer .newsletter {
+	text-align: center;
+	padding: 30px 0;
+}
+.footer .tp-footer .newsletter h3 {
+	font-size: 40px;
+	padding: 30px 0;
+	color: #1abb48;
+}
+.footer .tp-footer .newsletter input {
+	font-size: 16px;
+    padding: 11px 120px 12px 22px;
+    line-height: 26px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #1d2326;
+    border-radius: 0;
+    color: #dce4e8;
+}
+.footer .tp-footer .newsletter button {
+    padding: 11px 18px 12px 23px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 16px;
+    border: 2px solid #1d2326;
+    line-height: 26px;
+    letter-spacing: 3px;
+    background: #1d2326;
+    color: #fff;
+    margin-left: -6px;
+}
+.footer .tp-footer .newsletter button:hover {
+	background-color: #1abb48;
+	border-color: #1abb48;
+	transition: all 0.8s ease-in-out;
+}
+.footer-mid {
+	padding: 50px 0;
+}
+.footer-mid h4{
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+.footer-bottom p{
+	padding: 30px;
+	border-top: 2px solid #3c3c3c;
+	font-size: 16px;
+	text-align: center;
+}
+/* menu-page */
+.menu-banner {
+	background-image: url(../images/menu-bg.jpg);
+	height: 350px;
+	position: relative;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: 0;
+}
+/* contact page style */
+.contact-banner {
+	background-image: url(../images/contact-bg.jpg);
+	height: 350px;
+	position: relative;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: 0;
+}
+.contact-banner h1,
+.menu-banner h1 {
+	font-size: 55px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0;
+	padding-top: 130px;
+}
+.contact-banner .sub-title,
+.menu-banner .sub-title {
+	font-size: 22px;
+	color: #1abb48;
+	font-family: 'Pacifico', cursive;
+}
+.contact {
+	text-align: center;
+	padding: 90px 0;
+	background-color: #1b1b1b;
+	color: #fff;
+}
+.contact .back-shadow-mid,
+.contact .back-shadow-side {
+	border-radius: 8px;
+	padding: 50px 45px 50px 45px;
+}
+.contact .back-shadow-mid{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.7) 0px 30px 60px -30px;
+}
+.contact .back-shadow-side:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.7) 0px 30px 60px -30px;
+	transition: all 0.8s ease;
+}
+.contact-form .contact-form-fill h4 {
+	margin-bottom: 30px;
+}
+.contact-form {
+	padding-bottom: 60px;
+	background-color: #1b1b1b;
+	color: #fff;
+}
+.contact-form .contact-form-fill input,
+.contact-form .contact-form-fill textarea{
+	width: 100%;
+	height: 50px;
+	border: 2px solid #1d2326;
+	margin: 10px 0;
+	border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 25px;
+    background-color: transparent;
+}
+.contact-form .contact-form-fill textarea {
+	height: 100px;
+}
+.contact-form .contact-form-fill button {
+	padding: 10px 30px;
+	font-weight: bold;
+	font-size: 16px;
+	border: 2px solid #1abb48;
+	background-color: transparent;
+	color: #1abb48;
+} 
+.contact-form .contact-form-fill button:hover{
+	background-color: #1abb48;
+	color: #fff;
+	transition: all 0.8s ease;
+}
+.contact-form .map {
+	padding-left: 20px;
+}
+
+
